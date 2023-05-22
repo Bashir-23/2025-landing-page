@@ -116,3 +116,32 @@ body {
 .blog-card:hover img {
   transform: scale(1.1) rotate(-5deg);
 }
+.p-contact {
+  width: 115px;
+  font-weight: 700;
+  color: #222222;
+  padding-right: 15px;
+  display: inline-block !important;
+}
+.contact-form {
+  background-color: #4741af;
+}
+.row-style {
+  background-color: #f0f6fb;
+  max-width: 1200px;
+}
+.buy-square {
+  background-color: #f0f6fb;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-bottom: 65px;
+  padding-top: 65px;
+}
+.buy-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #222222;
+}
+.buy-btn {
+  padding-left: 197px;
+}
