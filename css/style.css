@@ -23,6 +23,89 @@ body {
   color: white;
 }
 .rounded {
-  height: 120%;
+  height: 88%;
   width: 100%;
+}
+.main-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 30px;
+  font-weight: 400;
+}
+.main-btn {
+  padding: 12px 58px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #6c63ff;
+  box-shadow: 0px 5px 15px 0px rgba(8, 0, 140, 0.19);
+  background: #6c63ff;
+  color: white;
+  margin-top: 25px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 25px;
+}
+.aboutus-img {
+  margin-left: -340px;
+  margin-right: 50px;
+}
+.subtitle-style {
+  font-size: 24px;
+  line-height: 2;
+  margin-bottom: 0;
+  color: #6c63ff;
+  font-weight: 670;
+}
+.title-style {
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #222222;
+  margin-top: 0;
+}
+.p-style {
+  color: #666666;
+  font-weight: 18px;
+}
+.link-style {
+  font-weight: 700;
+  color: black;
+}
+.service-img {
+  border-radius: 50%;
+  background-color: rgb(243, 249, 251);
+  margin-top: 30px;
+}
+.service-icon {
+  background-color: #6c63ff;
+  padding: 15px;
+  width: 55px;
+  border-radius: 50%;
+}
+.service-third-img {
+  margin-top: -100px;
+}
+.under-icon-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 21px;
+  color: #222222;
+}
+.full-width-section {
+  background-color: #f0f6fb;
+}
+.why-choose-img {
+  margin-left: -125px;
+}
+.mycards {
+  border-bottom: 3px solid #6c63ff;
+}
+.myteam {
+  background-color: #f0f6fb;
+}
+.myteam-img {
+  position: absolute;
+  left: 35%;
 }
