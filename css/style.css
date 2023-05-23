@@ -87,6 +87,12 @@ body {
 .service-third-img {
   margin-top: -100px;
 }
+.service-card:hover .service-icon {
+  margin-left: 30px;
+}
+.service-icon {
+  transition: all 0.4s;
+}
 .under-icon-title {
   font-weight: 700;
   margin-bottom: 15px;
@@ -101,6 +107,12 @@ body {
 }
 .mycards {
   border-bottom: 3px solid #6c63ff;
+}
+.mycards:hover {
+  margin-top: -25px;
+}
+.mycards {
+  transition: all 0.5s;
 }
 
 .blog-link {
@@ -144,4 +156,11 @@ body {
 }
 .buy-btn {
   padding-left: 197px;
+}
+.mynavbar {
+  background-color: #2e2b60;
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  display: block;
 }

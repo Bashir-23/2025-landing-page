@@ -16,12 +16,13 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Navbar Start -->
 
-    <div class="mynavbar py-3">
+    <div class="mynavbar">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
@@ -82,7 +83,13 @@
           </div>
           <div class="col-lg-2"></div>
           <div class="col-lg-5">
-            <img src="images/ybm.jpg" class="rounded" alt="" />
+            <img
+              src="images/ybm.jpg"
+              class="rounded wow bounceInUp"
+              data-wow-delay="1s"
+              data-wow-duration="2s"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -94,7 +101,13 @@
     <div class="container my-5">
       <div class="row py-5">
         <div class="col-lg-5">
-          <img class="aboutus-img" src="images/about-img.png" alt="About us " />
+          <img
+            class="aboutus-img wow slideInLeft"
+            src="images/about-img.png"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+            alt="About us "
+          />
         </div>
         <div class="col-lg-7">
           <h4 class="subtitle-style mt-5">Über uns</h4>
@@ -133,7 +146,7 @@
 
           <div class="row">
             <div class="col-lg-6">
-              <div>
+              <div class="service-card">
                 <div class="service-icon my-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +168,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div>
+              <div class="service-card">
                 <div class="service-icon my-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +191,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div>
+              <div class="service-card">
                 <div class="service-icon my-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +213,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div>
+              <div class="service-card">
                 <div class="service-icon my-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +242,9 @@
         <div class="col-lg-6">
           <div class="service-img">
             <img
-              class="service-third-img"
+              class="service-third-img wow slideInRight"
+              data-wow-duration="2s"
+              data-wow-delay="1s"
               src="images/service-img.png"
               alt="service"
             />
@@ -246,7 +261,13 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-6">
-            <img class="why-choose-img" src="images/feature-img.png" alt="" />
+            <img
+              class="why-choose-img wow slideInLeft"
+              data-wow-duration="2s"
+              data-wow-delay="1s"
+              src="images/feature-img.png"
+              alt=""
+            />
           </div>
           <div class="col-lg-6 pt-4">
             <h4 class="subtitle-style mt-5">Why Choose Us</h4>
@@ -419,7 +440,7 @@
             aliqua. Ut enim ad minim veniam
           </p>
           <div class="row my-4">
-            <div class="col-lg-2 py-4">
+            <div class="col-lg-2 py-4 service-card">
               <div class="service-icon my-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -444,7 +465,7 @@
                 aliqu ad minim veniam
               </p>
             </div>
-            <div class="col-lg-2 py-4">
+            <div class="col-lg-2 py-4 service-card">
               <div class="service-icon my-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -473,7 +494,13 @@
           </div>
         </div>
         <div class="col-lg-5">
-          <img src="images/feature2-img.png" alt="" />
+          <div
+            class="wow slideInRight"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+          >
+            <img src="images/feature2-img.png" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -683,11 +710,28 @@
     <!-- Buy section END -->
 
     <!-- test -->
+    <!-- testend -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      var wow = new WOW({
+        boxClass: "wow", // animated element css class (default is wow)
+        animateClass: "animated", // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null, // optional scroll container selector, otherwise use window
+      });
+      wow.init();
+    </script>
   </body>
 </html>
